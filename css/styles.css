@@ -1,7 +1,6 @@
 *, *:before, *:after {
   box-sizing: border-box;
   font-family: Lato, FontAwesome, Arial, sans-serif;
-  font-weight: 300;
   padding: 0;
 }
 
@@ -9,6 +8,7 @@ body {
   line-height: 1.5;
   margin: 0;
   font-size: 1em;
+  font-weight: 300;
 }
 
 section {
@@ -23,6 +23,10 @@ section {
 section h3 {
   color: black;
   font-weight: 700;
+}
+
+a {
+  text-decoration: none;
 }
 
 /******************************************************************************
@@ -49,7 +53,7 @@ section h3 {
 ******************************************************************************/
 
 .nav-hide {
-  top: -45px;
+  /*top: -45px;*/
   overflow: hidden;
   height: 45px;
   padding: 0;
@@ -58,10 +62,10 @@ section h3 {
   position: fixed;
   z-index: 2;
   width: 100%;
-  color: grey;
-  border-bottom: solid 1px grey;
-  background-color: white;
+  color: white;
+  background-color: black;
   transition: top 0.2s;
+  overflow: auto;
 }
 
 .nav-show {
@@ -82,15 +86,29 @@ nav li {
 }
 
 nav a:link {
-  color: grey;
+  color: yellow;
 }
 
 nav a:visited {
-  color: grey;
+  color: white;
 }
 
 nav a:hover {
-  color: #6897bb;
+  color: #FFDA90;
+}
+
+.links {
+  float: right;
+}
+
+.company_name {
+  float: left;
+  display: block;
+  font-weight: 700;
+}
+
+.company_name h3 {
+  margin: auto;
 }
 
 /******************************************************************************
