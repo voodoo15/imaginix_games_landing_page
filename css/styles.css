@@ -68,6 +68,52 @@ a {
   color: #3B90AF;
 }
 
+#project_section {
+  display: inline-block;
+}
+
+.project {
+  display: block;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  text-align: left;
+  padding: 0 5px;
+  height: auto;
+  min-width: 150px;
+  min-height: 250px;
+}
+
+.project h3 {
+  color: #FFDA90;
+}
+
+.project img {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+#partner_section {
+  display: inline-block;
+  width: 100%;
+}
+
+.partner {
+  display: block;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  margin: auto;
+  height: auto;
+  min-width: 400px;
+}
+
+.partner img {
+  max-width: 50%;
+  height: auto;
+}
+
 /******************************************************************************
   My nav rules
 ******************************************************************************/
