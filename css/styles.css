@@ -14,9 +14,83 @@ body {
 section {
   text-align: center;
   display: block;
-  padding: 80px 0;
+  padding: 80px 80px;
   margin: 0;
   height: auto;
+  border-bottom: solid 1px grey;
+}
+
+section h3 {
+  color: black;
+  font-weight: 700;
+}
+
+/******************************************************************************
+  Rules for individual sections
+******************************************************************************/
+
+#hero_section {
+  text-align: center;
+  display: block;
+  padding: 0;
+  width: 100%;
+  background-color: grey;
+  height: 700px;
+  position: relative;
+  background-image: url("../images/landing_page/full_header_image.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/******************************************************************************
+  My nav rules
+******************************************************************************/
+
+.nav-hide {
+  top: -45px;
+  overflow: hidden;
+  height: 45px;
+  padding: 0;
+  line-height: 40px;
+  padding: 0 10px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  color: grey;
+  border-bottom: solid 1px grey;
+  background-color: white;
+  transition: top 0.2s;
+}
+
+.nav-show {
+  top: 0px;
+  transition: top 0.2s;
+}
+
+nav ul {
+  display: block;
+  padding: 0;
+  margin: auto;
+}
+
+nav li {
+  display: inline;
+  margin: auto;
+  padding: 0 5px;
+}
+
+nav a:link {
+  color: grey;
+}
+
+nav a:visited {
+  color: grey;
+}
+
+nav a:hover {
+  color: #6897bb;
 }
 
 /******************************************************************************
