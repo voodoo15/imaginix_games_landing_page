@@ -14,7 +14,7 @@ body {
 section {
   text-align: center;
   display: block;
-  padding: 80px 80px;
+  padding: 80px 16%;
   margin: 0;
   height: auto;
   border-bottom: solid 1px #ccc;
@@ -28,6 +28,18 @@ section h3 {
 a {
   text-decoration: none;
 }
+
+/*a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #FFDA90;
+}*/
 
 /******************************************************************************
   Rules for individual sections
@@ -60,8 +72,8 @@ a {
   text-align: left;
   padding: 0 5px;
   height: auto;
-  min-width: 400px;
-  min-height: 255px;
+  min-width: 200px;
+  min-height: 300px;
 }
 
 .solution h3 {
@@ -139,6 +151,71 @@ a {
   background-color: #f2f2f2
 }
 
+#contact_section label {
+  display:block;
+  margin-top:20px;
+  letter-spacing:2px;
+}
+
+#contact_section form {
+    margin:0 auto;
+    width:459px;
+}
+
+#contact_section input, textarea {
+  width:500px;
+  height:27px;
+  background: white;
+  border:1px solid #999;
+  padding:10px;
+  margin-top:3px;
+  font-size:0.9em;
+  color:#3a3a3a;
+  /*-moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;*/
+}
+
+#contact_section textarea {
+  height:250px;
+}
+
+#contact_section button {
+  border: none;
+  color: white;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+
+#contact_section input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 5px;
+}
+
+footer a:link {
+  color: white;
+}
+
+footer a:visited {
+  color: white;
+}
+
+footer a:hover {
+  color: #FFDA90;
+}
+
 /******************************************************************************
   My nav rules
 ******************************************************************************/
@@ -177,7 +254,7 @@ nav li {
 }
 
 nav a:link {
-  color: yellow;
+  color: white;
 }
 
 nav a:visited {
@@ -209,6 +286,10 @@ nav a:hover {
 @media all and (max-width: 960px) {
   html {
     font-size: 16px;
+  }
+
+  body {
+    max-width: 960px;
   }
 }
 
