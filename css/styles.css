@@ -64,7 +64,7 @@ a:hover {
   display: inline-block;
 }
 
-.solution {
+#solution_section .solution {
   display: block;
   float: left;
   width: 50%;
@@ -76,7 +76,7 @@ a:hover {
   min-height: 300px;
 }
 
-.solution h3 {
+#solution_section .solution h3 {
   color: #3B90AF;
 }
 
@@ -84,7 +84,7 @@ a:hover {
   display: inline-block;
 }
 
-.project {
+#project_section .project {
   display: block;
   float: left;
   width: 50%;
@@ -96,11 +96,11 @@ a:hover {
   min-height: 250px;
 }
 
-.project h3 {
+#project_section .project h3 {
   color: #FFDA90;
 }
 
-.project img {
+#project_section .project img {
   width: 50%;
   float: left;
   overflow: hidden;
@@ -111,7 +111,7 @@ a:hover {
   width: 100%;
 }
 
-.partner {
+#partner_section .partner {
   display: block;
   float: left;
   width: 50%;
@@ -121,7 +121,11 @@ a:hover {
   min-width: 400px;
 }
 
-.partner img {
+#partner_section .partner_container {
+  height: 5%;
+}
+
+#partner_section .partner img {
   max-width: 50%;
   height: auto;
 }
@@ -195,6 +199,18 @@ a:hover {
 
 #contact_section input:focus, textarea:focus {
     border:1px solid #97d6eb;
+}
+
+#contact_section .contact a:link {
+  color: black;
+}
+
+#contact_section .contact a:visited {
+  color: black;
+}
+
+#contact_section .contact a:hover {
+  color: #FFDA90;
 }
 
 footer {
