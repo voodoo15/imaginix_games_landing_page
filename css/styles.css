@@ -258,7 +258,7 @@ footer a:hover {
   color: white;
   background-color: black;
   transition: top 0.2s;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .nav-show {
@@ -305,6 +305,125 @@ nav a:hover {
 }
 
 /******************************************************************************
+  Back to top from:  http://html-tuts.com/back-to-top-button-jquery/
+******************************************************************************/
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+  /*background: #6897bb url("../img/cd-top-arrow.svg") no-repeat center 43%;*/
+	z-index: 1;
+	right: 25px;
+	bottom: 25px;
+  color: #F0F1F3;
+}
+
+a.back-to-top:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+/******************************************************************************
+  Nav Toggle and sidebar rules on mobile device
+******************************************************************************/
+
+#nav-toggle {
+  position: fixed;
+  left: 5%;
+  top: 1%;
+  cursor: pointer;
+  padding: 30px 100px 36px 0px;
+  display: none;
+  z-index: 5;
+
+  transition: left 0.25s;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  height: 2px;
+  width: 15px;
+  background: #F0F1F3;
+  position: absolute;
+  display: block;
+  content: '';
+
+  transition: all 0.25s;
+}
+
+#nav-toggle span:before {
+  top: -5px;
+}
+
+#nav-toggle span:after {
+  bottom: -5px;
+}
+
+#nav-toggle.is-open span {
+  background-color: transparent;
+
+  transition: left 0.25s;
+}
+
+#nav-toggle.is-open {
+  left: 30%;
+
+  transition: left 0.25s;
+
+}
+
+#nav-toggle.is-open span:before {
+  top: 0;
+  transform: rotateZ(45deg);
+}
+
+#nav-toggle.is-open span:after {
+  bottom: 0;
+  transform: rotateZ(-45deg);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -30%;
+  height: auto;
+  width: 25%;
+  background-color: #383332;
+  margin: auto;
+  z-index: 5;
+  padding: 5px;
+  opacity: 0.8;
+
+  transition: left 0.25s;
+
+}
+
+.sidebar li {
+  padding: 5px;
+}
+
+
+.sidebar a:link {
+  color: white;
+}
+
+.sidebar a:visited {
+  color: white;
+}
+
+.sidebar a:hover {
+  color: #6897bb;
+}
+
+.sidebar.is-open {
+  left: 0;
+}
+
+/******************************************************************************
   Media Queries Below
 ******************************************************************************/
 
@@ -321,5 +440,19 @@ nav a:hover {
 @media all and (max-width: 667px) {
   html {
     font-size: 10px;
+  }
+  .skill_container {
+    width: 100%;
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  a.back-to-top {
+    right: 1%;
+    bottom: 1%;
+  }
+  #nav-toggle {
+    display: block;
   }
 }
