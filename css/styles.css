@@ -38,7 +38,7 @@ a:visited {
 }
 
 a:hover {
-  color: #FFDA90;
+  color: #c71e1e;
 }*/
 
 /******************************************************************************
@@ -155,7 +155,16 @@ a:hover {
   background-color: #f2f2f2
 }
 
-#contact_section label {
+#contact_section {
+  color: white;
+  background-color: black;
+}
+
+#contact_section h3 {
+  color: white;
+}
+
+/*#contact_section label {
   display:block;
   margin-top:20px;
   letter-spacing:2px;
@@ -177,7 +186,7 @@ a:hover {
   color:#3a3a3a;
   /*-moz-border-radius:5px;
   -webkit-border-radius:5px;
-  border-radius:5px;*/
+  border-radius:5px;
 }
 
 #contact_section textarea {
@@ -199,21 +208,21 @@ a:hover {
 
 #contact_section input:focus, textarea:focus {
     border:1px solid #97d6eb;
-}
+}*/
 
 #contact_section .contact a:link {
-  color: black;
+  color: white;
 }
 
 #contact_section .contact a:visited {
-  color: black;
+  color: white;
 }
 
 #contact_section .contact a:hover {
-  color: #FFDA90;
+  color: #c71e1e;
 }
 
-footer {
+/*footer {
   color: white;
   background-color: black;
   margin: 0;
@@ -229,8 +238,8 @@ footer a:visited {
 }
 
 footer a:hover {
-  color: #FFDA90;
-}
+  color: #c71e1e;
+}*/
 
 /******************************************************************************
   My nav rules
@@ -278,7 +287,7 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: #FFDA90;
+  color: #c71e1e;
 }
 
 .links {
