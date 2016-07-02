@@ -372,7 +372,7 @@ a.back-to-top:hover {
 }
 
 #nav-toggle.is-open {
-  left: 30%;
+  left: 35%;
 
   transition: left 0.25s;
 
@@ -393,12 +393,12 @@ a.back-to-top:hover {
   top: 0;
   left: -30%;
   height: auto;
-  width: 25%;
-  background-color: #383332;
+  width: 30%;
+  background-color: black;
   margin: auto;
   z-index: 5;
   padding: 5px;
-  opacity: 0.8;
+  opacity: 0.95;
 
   transition: left 0.25s;
 
@@ -418,7 +418,7 @@ a.back-to-top:hover {
 }
 
 .sidebar a:hover {
-  color: #6897bb;
+  color: #c71e1e;
 }
 
 .sidebar.is-open {
