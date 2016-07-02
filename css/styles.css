@@ -49,10 +49,11 @@ a:hover {
   text-align: center;
   display: block;
   padding: 0;
+  margin: 0;
   width: 100%;
   background-color: grey;
-  min-height: 100vh;
-  max-height: 700px;
+  /*min-height: 100vh;*/
+  height: 700px;
   /*position: relative;*/
   background-image: url("../images/landing_page/full_header_image.png");
   background-repeat: no-repeat;
@@ -319,7 +320,7 @@ a.back-to-top {
 	z-index: 1;
 	right: 25px;
 	bottom: 25px;
-  color: #F0F1F3;
+  color: #c71e1e;
 }
 
 a.back-to-top:hover {
@@ -349,7 +350,7 @@ a.back-to-top:hover {
   cursor: pointer;
   height: 2px;
   width: 15px;
-  background: #F0F1F3;
+  background: #c71e1e;
   position: absolute;
   display: block;
   content: '';
@@ -505,5 +506,20 @@ a.back-to-top:hover {
   .stacktable.small-only {
       text-align: center;
       display: table;
+  }
+  #hero_section {
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: grey;
+    height: 400px;
+    min-height: 400px;
+    background-image: url("../images/landing_page/full_header_image_small.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
   }
 }
