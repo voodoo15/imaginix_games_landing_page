@@ -124,6 +124,7 @@ a:hover {
 
 #partner_section .partner_container {
   height: 5%;
+  margin: auto;
 }
 
 #partner_section .partner img {
