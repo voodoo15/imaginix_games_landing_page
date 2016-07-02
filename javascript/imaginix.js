@@ -73,6 +73,6 @@ $(document).on('ready page:load', function() {
   });
 
   //Initialize slack table for schedule
-  $('#table').stacktable();
+  // $('.table').stacktable();
 
 });

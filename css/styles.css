@@ -138,23 +138,23 @@ a:hover {
   margin: auto;
 }
 
-#press_section table {
+#press_section .table {
   display: inline-block;
   margin: auto;
   text-align: left;
   border-spacing: 0;
 }
 
-#press_section table td {
+#press_section .table td {
   padding: 0 10px;
 }
 
-#press_section table tr td {
+#press_section .table tr td {
   border: solid 1px #ccc;
   margin: 0;
 }
 
-#press_section table tr:nth-child(even) {
+#press_section .table tr:nth-child(even) {
   background-color: #f2f2f2
 }
 
@@ -434,9 +434,14 @@ a.back-to-top:hover {
   html {
     font-size: 16px;
   }
-
   body {
     max-width: 960px;
+  }
+  #press_section .stacktable.large-only {
+      display: table;
+  }
+  #press_section .stacktable.small-only {
+      display: none;
   }
 }
 
@@ -447,10 +452,10 @@ a.back-to-top:hover {
   body {
     max-width: 900px;
   }
-  .stacktable.large-only {
+  #press_section .stacktable.large-only {
       display: table;
   }
-  .stacktable.small-only {
+  #press_section .stacktable.small-only {
       display: none;
   }
 }
@@ -510,10 +515,10 @@ a.back-to-top:hover {
     height: auto;
     min-width: 400px;
   }
-  .stacktable.large-only {
+  #press_section .stacktable.large-only {
       display: none;
   }
-  .stacktable.small-only {
+  #press_section .stacktable.small-only {
       text-align: center;
       display: table;
   }
