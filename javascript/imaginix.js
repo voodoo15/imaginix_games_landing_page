@@ -1,7 +1,5 @@
 $(document).on('ready page:load', function() {
 
-  alert("Hello! I am an alert box!!");
-
   // Borrowed code for smooth scroll from site:
   // http://www.learningjquery.com/2007/10/improved-animated-scrolling-script-for-same-page-links
 
@@ -56,6 +54,7 @@ $(document).on('ready page:load', function() {
   var amountScrolled = 300;
 
   $(window).scroll(function() {
+
   	if ($(window).scrollTop() > amountScrolled) {
   		$('a.back-to-top').fadeIn('slow');
       $('nav').addClass('nav-show');
@@ -71,9 +70,9 @@ $(document).on('ready page:load', function() {
     e.preventDefault();
 
     $(this).add('.sidebar').toggleClass('is-open');
-  })
+  });
 
   //Initialize slack table for schedule
-  $('table').stacktable();
+  $('#table').stacktable();
 
 });
